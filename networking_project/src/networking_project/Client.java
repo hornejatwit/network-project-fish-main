@@ -18,10 +18,12 @@ public class Client extends Frame {
       super("Virtual Internet Aquarium");
       prepareGUI();
    }
-	
+
+
    private void prepareGUI(){
       setSize(Globals.fish_size*8*Globals.graphics_scale,Globals.fish_size*Globals.fish_count*Globals.graphics_scale);
       addWindowListener(new java.awt.event.WindowAdapter() {
+		// exit application on close window
 		  public void windowClosing(java.awt.event.WindowEvent windowEvent) {
 			  System.exit(0);
 		  }
